@@ -103,24 +103,15 @@ return [
     */
 
     'providers' => ServiceProvider::defaultProviders()->merge([
-    /*
-    |--------------------------------------------------------------------------
-    | Application Service Providers
-    |--------------------------------------------------------------------------
-    |
-    | Di sini kamu daftar service provider milik aplikasi sendiri.
-    | Provider bawaan Laravel (route, view, db, dll) sudah otomatis
-    | ada di dalam defaultProviders().
-    |
-    */
+       App\Providers\AppServiceProvider::class,
+    ])->toArray(),
 
-    App\Providers\AppServiceProvider::class,
-    App\Providers\AuthServiceProvider::class,
-    App\Providers\BroadcastServiceProvider::class,
-    App\Providers\EventServiceProvider::class,
-    App\Providers\RouteServiceProvider::class,
 
-])->toArray(),
+    
+    // App\Providers\AuthServiceProvider::class,
+    // App\Providers\BroadcastServiceProvider::class,
+    // App\Providers\EventServiceProvider::class,
+    
 
 
     'aliases' => Facade::defaultAliases()->merge([
