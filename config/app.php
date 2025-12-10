@@ -103,19 +103,25 @@ return [
     */
 
     'providers' => ServiceProvider::defaultProviders()->merge([
-        // Kalau punya provider sendiri, tambahkan di sini, mis:
-        // App\Providers\AppServiceProvider::class,
-        // App\Providers\RouteServiceProvider::class,
-    ])->toArray(),
-
     /*
     |--------------------------------------------------------------------------
-    | Class Aliases
+    | Application Service Providers
     |--------------------------------------------------------------------------
     |
-    | Ini daftar facade default, termasuk 'View' => Illuminate\Support\Facades\View.
+    | Di sini kamu daftar service provider milik aplikasi sendiri.
+    | Provider bawaan Laravel (route, view, db, dll) sudah otomatis
+    | ada di dalam defaultProviders().
     |
     */
+
+    App\Providers\AppServiceProvider::class,
+    App\Providers\AuthServiceProvider::class,
+    App\Providers\BroadcastServiceProvider::class,
+    App\Providers\EventServiceProvider::class,
+    App\Providers\RouteServiceProvider::class,
+
+])->toArray(),
+
 
     'aliases' => Facade::defaultAliases()->merge([
         // Tambahkan alias custom kalau butuh, contoh:
