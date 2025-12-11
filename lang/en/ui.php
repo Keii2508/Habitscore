@@ -39,6 +39,7 @@ return [
     'btn_back'     => 'Kembali',
     'btn_finish'   => 'Selesai',
     'btn_retake'   => 'Ulangi quiz',
+    'alert_select' => 'Please fill all inputs correctly.',
 
     'tips_title' => 'Tips for You',
     'tips_desc'  => 'Here are some simple actions you can start today to improve your health habits.',

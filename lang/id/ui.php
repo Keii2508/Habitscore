@@ -27,6 +27,7 @@ return [
 
     'btn_detail'       => 'Lihat detail',
     'btn_home'         => 'Kembali ke beranda',
+    'alert_select' => 'Silakan isi semua input dengan benar.',
 
    
    
